@@ -1,0 +1,7 @@
+peptide 1: 50%
+peptide 2: 20%
+peptide 3: 10%
+peptide 4: 10%
+peptide 5: 8%
+peptide 6: 1%
+peptide 7: 1%
