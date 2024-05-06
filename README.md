@@ -48,12 +48,13 @@ Result:
 |         ...|      ...|       ...|      ...|      ...|
 |         109|     0.15|	  0.03| 	0.11|     0.20|
 
-![peptide inferral step result visualised](https://github.com/SophiaBailingZhou/pept-prot-infer/assets/63054954/1781e3d4-6a89-4632-89c3-77b464eb6144)
+<img src="https://github.com/SophiaBailingZhou/pept-prot-infer/assets/63054954/1781e3d4-6a89-4632-89c3-77b464eb6144" width="80%">
 
+### Step 2: Protein inferral
 To calculate `2a protein infer input dyeseq in prot match count.csv` and `2b protein infer input p_xi_given_zj.csv`, please perform a virtual digest and virtual labelling of the organism's proteome (or use a smaller custom list of possible proteins, if you can narrow it down even more) using the proteases and chemical labels you used in your assay. P(peptide<sub>j</sub>|protein<sub>k</sub>) can be calculated by first matching the peptides found in the peptide inferrand then dividing the the number matches of a peptide to one digested protein by the sum of matches all peptides have to that protein. Save this in `2b protein infer input p_xi_given_zj.csv`. `2a protein infer input dyeseq in prot match count.csv` contains the sum of the count of digested peptides per protein.
 Run the script again. It will now also give you give you protein distributions.
 
-![protein inferral step result visualised](https://github.com/SophiaBailingZhou/pept-prot-infer/assets/63054954/caa6368f-f3a4-47da-aa53-976b7102653e)
+<img src="https://github.com/SophiaBailingZhou/pept-prot-infer/assets/63054954/caa6368f-f3a4-47da-aa53-976b7102653e" width="80%">
 
 ## Explanation for what this code does in detail
 **Part 1: Calculation of peptide distribution P(Zj) using Matt's P(Xi|Zj) scores**
